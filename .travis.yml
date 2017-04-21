@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: kkwvSxSchuhXEMuVja1Fr01A7b9GEnd2d2W+3IcMHHroVcxkZFhVLywkFaHLSGuMwC22F3eD0zZgKtwwdzxLfspGLEKm8YLIB6Jz3tA3dBWIHSW2KXBp98pZOz6PopfjGO7KqgnGSWgslMMUyu6CEm/1HJP9oemJ1fXs8Z1fcpbGT/zqd0vH5SK1Fnjza8sFQ+CvbVM/80UTyqtirOED6YafQ8leS77GMvfgiWGO8W4BZMyVtU71kuBOUUVnUkRjK7a4Y4bv4vveVW4s8VNGJDQhq22P80DqcOGg4DEenKbVJSlIJlcT79+lC6lU2Ku3gbq0ClTvErfG9W8hsXO51lM1d4XiNLcpS0QjURmUX4UHJ6C6iUco/Vr1tvDJ45lbDHmZNoiUXITApJWgma4Ogbfm7K6A07MXlA0l+8XDWq1kMPlg4UsU/1Cpd6ezChqbBaPcTA16KmbMokgP0Hm2lVbEn1OCyFmP8+JX8aGMIsI+cFUBI+zc9+G0Fj9WKUJvnFPjvTyQtNHJ5X30HQUc+j5DL1147oElXTuNdR90oqrGWSW6FawDvX5hn68SpJKGGUrGp6ch3HAVob73IQSqtxGeQwe5PBLYsmbqf4ghgOgY0UcIQkq8Emuo4Nv7xc5r32x6eJq+SuNGjtJ4XFbmEFPhXGibMN5lTdNj0Cj1QdQ=
+  app: pure-coast-22836
+  on:
+    repo: jylei/node-restaurants-app-mongoose
+    branch: feature/with-tests
